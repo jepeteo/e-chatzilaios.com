@@ -1,3 +1,11 @@
+// message on checkout page, before payment methods.
+.jNotice {
+	margin-bottom: 2rem;
+	padding:1rem;
+	background: #c006;
+	border-radius: 4px;
+}
+
 a.reset_variations {
     color: #000;
 }
