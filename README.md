@@ -10,3 +10,5 @@ e-chatzilaios.com custom code
 **displaying_cart_items_weight()** - Display the weight of each cart item
 
 **print_cart_weight()** - Display a notice of the total cart weight
+
+**messageBeforePaymentMethods()** - Display a message on checkout page before paymenth methods
