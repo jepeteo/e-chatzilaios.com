@@ -1,9 +1,15 @@
 <?php
-
 /* Add custom functions - Th.M */
 
-add_action('admin_head', 'my_custom_fonts');
+// Display message, on checkout page, in the review order block, before the payment options.
+function messageBeforePaymentMethods() {
+	echo "<div class='jNotice'>";
+    	echo esc_html__('Μην προβείτε σε πληρωμή, πριν ενημερωθείτε για τη διαθεσιμότητα του προϊόντος', 'Divi');
+	echo "</div>";
+}
+add_action('woocommerce_review_order_before_payment', 'messageBeforePaymentMethods');
 
+add_action('admin_head', 'my_custom_fonts');
 function my_custom_fonts() {
   echo '<style>
 	#wp-admin-bar-notes, .wpml-admin-notice,  { display:none; }
